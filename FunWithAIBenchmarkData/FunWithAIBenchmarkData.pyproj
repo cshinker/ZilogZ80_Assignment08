@@ -49,6 +49,12 @@
     <Compile Include="utilitiesPackage\__init__.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="viz_package\viz.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="viz_package\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="dataPackage\" />
@@ -59,6 +65,7 @@
     <Folder Include="PDFPackage\" />
     <Folder Include="readingLevelPackage\" />
     <Folder Include="utilitiesPackage\" />
+    <Folder Include="viz_package\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="dataPackage\MMLU\data\abstract_algebra_test.csv" />
