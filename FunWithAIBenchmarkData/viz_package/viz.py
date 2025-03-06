@@ -18,10 +18,8 @@ import matplotlib.pyplot as plt
 def visualize_readability_indices(indices, dataset_name):
     """
     Creates a bar chart for the given readability indices.
-    
-    Parameters:
-        indices (dict): A dictionary of readability index names to their values.
-        dataset_name (str): The name of the dataset for the title.
+    @param indices dict: A dictionary of readability index names to their values
+    @param dataset_name str: The name of the dataset for the title
     """
     keys = list(indices.keys())
     values = list(indices.values())
@@ -35,9 +33,8 @@ def visualize_readability_indices(indices, dataset_name):
 def visualize_prompt_length_distribution(questions):
     """
     Creates a histogram to show the distribution of word counts in the question prompts.
-    
-    Parameters:
-        questions (list): A list of question dictionaries with a 'prompt' key.
+ 
+    @param questions list: A list of question dictionaries with a 'prompt' key.
     """
     # Compute the word count for each prompt
     lengths = [len(q["prompt"].split()) for q in questions if "prompt" in q]
