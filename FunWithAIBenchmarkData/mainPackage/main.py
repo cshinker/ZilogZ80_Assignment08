@@ -17,6 +17,7 @@ from utilitiesPackage.utilities import *
 from utilitiesPackage.CSV_Utilities import *
 from PDFPackage.PDFUtilities import *
 from viz_package.viz import *
+from zilog_package.zilog import *
 import matplotlib.pyplot as plt
 
 
@@ -29,7 +30,10 @@ if __name__ == "__main__":
 
  
     # Start from here
-
+    try:
+        show_logo("data_files/ziloglogo.webp")
+    except:
+        print("Error showing logo")
 
     #Add logic (modularly!) to perform some interesting data visualization. You are �weapons free� on
     #this effort: use any AI tool you wish. Be sure cite your sources* so I can get a feel for what everyone is
@@ -50,6 +54,8 @@ if __name__ == "__main__":
         
         # Visualize the distribution of question prompt lengths.
         visualize_prompt_length_distribution(questions)
+
+
 
 
     
